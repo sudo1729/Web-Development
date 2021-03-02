@@ -12,7 +12,7 @@ h1{
     line-height: 1.5;
 }
 .container-fluid{
-    padding:3% 15%;
+    padding:3% 15% 7%;
 }
 
 
@@ -46,13 +46,18 @@ h1{
 /* Tittle Image */
 
 .title-image{
-    width: 60%;
+    width: 45%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
 }
 
 #features{
-    padding:7% 15%;
+    padding:10% 15%;
     text-align: center;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 p{
@@ -116,4 +121,35 @@ h2{
 .princing-col{
     padding:3% 2%;
     text-align: center;
+}
+
+@media (max-width:1100px){
+    .title-image{
+        position: static;
+        transform: rotate(0deg);
+        
+    }
+    #title{
+        text-align: center;
+    }
+}
+
+
+#cta{
+    background-color: #FF4c88;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 800;
+    padding: 7% 15%;
+}
+
+#footer{
+    background-color: #fff;
+    text-align: center;
+    padding: 2% 15%;
+    font-size: 1.2rem;
+}
+
+.footer-icons{
+    padding: 5% 2%;
 }
